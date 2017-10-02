@@ -2,20 +2,20 @@
 Scratchat is a Scratch-like web application for users to implement chatbots with little to no programming experience.
 
 
-Group Project Name: Scrachat
-Members: Ruihao Xie, Utsab Upadhyay, Thomas Han, Aaron Ambrose, Nate Swanson
-Fundamentals of Software Engineering
+## Group Project Name: Scrachat
+### Members: Ruihao Xie, Utsab Upadhyay, Thomas Han, Aaron Ambrose, Nate Swanson
+### Fundamentals of Software Engineering
 
 
 
 
-Project’s requirement:
+## Project’s requirement:
 
 Allows the user with no programming experience to build a chatbot
 The chatbot should be easily mounted on
 
 
-UX Flow
+## UX Flow
 starts with asking the user to pick from [ build a new chatbot, read how it works]
 		If read how it works is selected:
 			Display details on the app, how it works, and it’s advantages
@@ -24,5 +24,5 @@ starts with asking the user to pick from [ build a new chatbot, read how it work
 			Allows user to add text
 
 
-Issues:
+## Issues:
 	Integrating the chatbot with facebook messenger
