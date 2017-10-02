@@ -24,5 +24,6 @@ starts with asking the user to pick from [ build a new chatbot, read how it work
 			Allows user to add text
 
 
-## Issues:
-	Integrating the chatbot with facebook messenger
+## Issues
+
+Integrating the chatbot with facebook messenger
