@@ -1,9 +1,7 @@
-# Scratchat
-## Group Project Name: Scrachat
+# Scratchat - Fundamentals of Software Engineering
+## Group Project Name: Scratchat
 ### Group Lead: Thomas Han
 ### Members (Last name alphabetical): Aaron Ambrose, Nate Swanson, Utsab Upadhyay, Ruihao Xie
-### Fundamentals of Software Engineering
-
 
 ## Abstract
 
