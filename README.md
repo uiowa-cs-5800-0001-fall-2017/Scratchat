@@ -1,29 +1,19 @@
 # Scratchat
-Scratchat is a Scratch-like web application for users to implement chatbots with little to no programming experience.
-
-
 ## Group Project Name: Scrachat
-### Members: Ruihao Xie, Utsab Upadhyay, Thomas Han, Aaron Ambrose, Nate Swanson
+### Group Lead: Thomas Han
+### Members (Last name alphabetical): Aaron Ambrose, Nate Swanson, Utsab Upadhyay, Ruihao Xie
 ### Fundamentals of Software Engineering
 
 
+## Abstract
 
+Scratchat is a Scratch-like web application for users to implement chatbots with little to no programming experience. We use Node.js, HTML/CSS, and Facebook Messenger API to achieve this goal.
 
-## Project’s requirement:
+## Progress
 
-Allows the user with no programming experience to build a chatbot
-The chatbot should be easily mounted on
+10/1/2017 - A meeting will be held today, more info could be found under our <a href="https://github.com/uiowa-cs-5800-0001-fall-2017/Scratchat/wiki">wiki</a> page.
 
+## More information
 
-## UX Flow
-starts with asking the user to pick from [ build a new chatbot, read how it works]
-		If read how it works is selected:
-			Display details on the app, how it works, and it’s advantages
-		If build a new chatbot is selected:
-			Display a canvas which allows user to draw on it using drawing tools
-			Allows user to add text
-
-
-## Issues
-
-Integrating the chatbot with facebook messenger
+This page is maintained by <a href="">{PERSON}</a>.
+More question: {PERSON_EMAIL_ADDR}
