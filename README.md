@@ -3,6 +3,8 @@
 ### Group Lead: Thomas Han
 ### Members (Last name alphabetical): Aaron Ambrose, Nate Swanson, Utsab Upadhyay, Ruihao Xie
 
+### website: https://uiowa-cs-5800-0001-fall-2017.github.io/Scratchat/
+
 ## Abstract
 
 Scratchat is a Scratch-like web application for users to implement chatbots with little to no programming experience. We use Node.js, HTML/CSS, and Facebook Messenger API to achieve this goal.
