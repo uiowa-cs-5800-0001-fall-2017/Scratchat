@@ -1,0 +1,11 @@
+.jumbotron {
+    background-image: url("../res/robot-customer-service.png");
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;;
+}
+
+body {
+    background-color: #e8edd7;
+}
