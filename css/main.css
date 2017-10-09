@@ -3,9 +3,66 @@
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;;
+    background-attachment: fixed;
+    margin-top: 20px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container:hover a.btn.btn-primary.btn-lg{
+    opacity: 1; 
+    transition: 0.5s ease; 
+}
+
+.jumbotron:hover{
+    opacity: 0.3;
+    transition: 0.5s ease; 
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, white, #1974fc);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #1974fc;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #36bac3;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 body {
-    background-color: #e8edd7;
+
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/04/colortheory.jpg"); 
 }
