@@ -8,15 +8,6 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.container:hover a.btn.btn-primary.btn-lg{
-    opacity: 1; 
-    transition: 0.5s ease; 
-}
-
-.jumbotron:hover{
-    opacity: 0.3;
-    transition: 0.5s ease; 
-}
 .sidenav {
     height: 100%;
     width: 0;
@@ -24,7 +15,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background: linear-gradient(to bottom, white, #1974fc);
+    background: white;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
