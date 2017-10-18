@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fundamentals of SE (Scratchat)</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <!-- jQuery cdn -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/main.css">
+
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+            }
+        </script>
+
+
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">About us</a>
+            <a href="features.html">Features</a>
+            <a href="https://scratch.mit.edu/about">About Scratch</a>
+        </div>
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer; color: #white" onclick="openNav()">&#9776;</span>
+        </div>
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1>We are Scratchat!</h1>
+                <p>with awesomeness loaded, and aim to build a Facebook chatbot implementer!</p>
+            </div>
+        </div>
+        <div class="container-fluid" style="background-color: white; padding-top: 50px; padding-bottom: 50px;">
+            <!--<div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail"><img src="res/thomashan.jpg">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail"><img src="https://apod.nasa.gov/apod/image/1601/CoronaMt_Dai_1500.jpg">
+                        <div class="caption text-center">
+                            This is a picture of this very important person.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail"><img src="https://apod.nasa.gov/apod/image/1601/CoronaMt_Dai_1500.jpg">
+                        <div class="caption text-center">
+                            This is a picture of this very important person.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-4">
+                        <div class="thumbnail"><img src="https://apod.nasa.gov/apod/image/1601/CoronaMt_Dai_1500.jpg">
+                            <div class="caption text-center">
+                                This is a picture of this very important person.
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail"><img src="https://apod.nasa.gov/apod/image/1601/CoronaMt_Dai_1500.jpg">
+                        <div class="caption text-center">
+                            This is a picture of this very important person.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+            -->
+            <div class="resp-tabs-container">
+                <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+                    <div class="col-md-3 team-gd ">
+                        <div class="thumb">
+                            <a href="#portfolioModal1" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="res/thomashan.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 team-gd ">
+                        <div class="thumb">
+                            <a href="#portfolioModal3" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g2.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 team-gd ">
+                        <div class="thumb">
+                            <a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g3.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 team-gd ">
+                        <div class="thumb">
+                            <a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g4.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 team-gd yes_marg ">
+                        <div class="thumb">
+                            <a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g5.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 team-gd yes_marg ">
+                        <div class="thumb">
+                            <a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g6.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 team-gd yes_marg ">
+                        <div class="thumb">
+                            <a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g7.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 team-gd yes_marg ">
+                        <div class="thumb">
+                            <a href="#portfolioModal8" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g8.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+                    <div class="col-md-3 team-gd ">
+                        <div class="thumb">
+                            <a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g9.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 team-gd  ">
+                        <div class="thumb">
+                            <a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g10.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 team-gd ">
+                        <div class="thumb">
+                            <a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g11.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+                    <div class="col-md-3 team-gd ">
+                        <div class="thumb">
+                            <a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g12.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 team-gd ">
+                        <div class="thumb">
+                            <a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g1.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 team-gd">
+                        <div class="thumb">
+                            <a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g3.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 team-gd">
+                        <div class="thumb">
+                            <a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g4.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
+                    <div class="col-md-3 team-gd ">
+                        <div class="thumb">
+                            <a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g9.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 team-gd  ">
+                        <div class="thumb">
+                            <a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g1.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 team-gd ">
+                        <div class="thumb">
+                            <a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g12.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-4">
+                    <div class="col-md-3 team-gd ">
+                        <div class="thumb">
+                            <a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g6.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 team-gd  ">
+                        <div class="thumb">
+                            <a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g4.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 team-gd ">
+                        <div class="thumb">
+                            <a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/g1.jpg" alt="">
+                            <div class="team_pos">
+                                <ul>
+                                    <li>
+                                        <div class="morph pic fb_icon1">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </body>
+</html>

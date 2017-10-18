@@ -1,11 +1,16 @@
-.jumbotron {
+#jumbo {
     background-image: url("../res/robot-customer-service.png");
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin-top: 20px; 
+    margin-top: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .sidenav {
@@ -55,5 +60,5 @@
 
 body {
 
-    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/04/colortheory.jpg"); 
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/04/colortheory.jpg");
 }
