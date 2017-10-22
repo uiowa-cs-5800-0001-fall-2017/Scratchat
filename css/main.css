@@ -1,4 +1,5 @@
-#jumbo {
+
+.jumbotron {
     background-image: url("../res/robot-customer-service.png");
     background-position: 0% 25%;
     background-size: cover;
@@ -6,6 +7,20 @@
     background-attachment: fixed;
     margin-top: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    transition: .3s ease;
+}
+
+label {
+    top: $width/15;
+    color: rgba(white, .5);
+    font: 400 $width/15 Roboto;
+    cursor: text;
+    transition: .25s ease;
 }
 
 img {

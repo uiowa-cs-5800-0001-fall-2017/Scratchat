@@ -16,6 +16,19 @@
                 document.getElementById("mySidenav").style.width = "0";
                 document.getElementById("main").style.marginLeft= "0";
             }
+            function allowDrop(ev) {
+                ev.preventDefault();
+            }
+
+            function drag(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+
+            function drop(ev) {
+                ev.preventDefault();
+                var data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data).cloneNode(true));
+            }
         </script>
     </head>
     <body>
@@ -25,17 +38,47 @@
             <a href="index.html">Home</a>
             <a href="aboutus.html">About us</a>
             <a href="features.html">Features</a>
+            <a href="#">Build</a>
+            <a href="tutorial.html">Tutorial</a>
             <a href="https://scratch.mit.edu/about">About Scratch</a>
         </div>
 
         <div id="main">
             <span style="font-size:30px;cursor:pointer; color: #white" onclick="openNav()">&#9776;</span>
         </div>
+        
+
+        
         <div class="container">
-            <div class="jumbotron">
-                <div id="scratchWindow" style="padding-top: 200px; padding-bottom: 200px;">
+            <div class="jumbotron" ondrop="drop(event)" ondragover="allowDrop(event)" style= "padding-bottom: 40%; ">
+                <div id="scratchQuestions" style="float: left;">
+                        
+                </div>
+                <div id="scratchAnswers" style="float: right;">
 
                 </div>
+            </div>
+        </div>
+        <div class="userInput" style="display: inline-block; text-align: center; width: 100%;">
+            <div class="textbox" style="float: left; margin-left: 30%">
+                <p>
+                    <label>What Question Do You Want Your Bot To Ask?</label><br>
+                    <textarea id=question draggable="true" ondragstart="drag(event)" style="color: black; resize: none;"
+                        id = "Question"
+                        rows = 1
+                        cols = 30
+                        placeholder = "Your Question Here"></textarea>
+                </p>
+            </div>
+            <div class="textbox" style="float: right; margin-right: 30%" >
+                <p>
+                    <label>What Answers Do You Want To Respond to? </label><br>
+                    <textarea id=answer draggable="true" ondragstart="drag(event)" style="color: grey; resize: none;"
+                        id = "Answer"
+                        rows = 1
+                        cols = 30
+                        placeholder = "Your Answers Here"></textarea>
+                </p>
             </div>
         </div>
     </body>
