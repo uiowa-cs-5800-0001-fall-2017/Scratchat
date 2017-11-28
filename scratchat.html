@@ -6,6 +6,21 @@
         <!-- jQuery cdn -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/main.css">
+
+        <script src="blockly/blockly_compressed.js"></script>
+        <script src="blockly/blocks_compressed.js"></script>
+
+        <script src="blockly/msg/js/en.js"></script>
+        <xml id="toolbox" style="display: none">
+            <block type="controls_if"></block>
+            <block type="controls_repeat_ext"></block>
+            <block type="logic_compare"></block>
+            <block type="math_number"></block>
+            <block type="math_arithmetic"></block>
+            <block type="text"></block>
+            <block type="text_print"></block>
+        </xml>
+
         <script>
             function openNav() {
                 document.getElementById("mySidenav").style.width = "250px";
@@ -46,13 +61,15 @@
         <div id="main">
             <span style="font-size:30px;cursor:pointer; color: #white" onclick="openNav()">&#9776;</span>
         </div>
-        
 
-        
+
+
         <div class="container">
+            <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+
             <div class="jumbotron" ondrop="drop(event)" ondragover="allowDrop(event)" style= "padding-bottom: 40%; ">
                 <div id="scratchQuestions" style="float: left;">
-                        
+
                 </div>
                 <div id="scratchAnswers" style="float: right;">
 
@@ -82,4 +99,8 @@
             </div>
         </div>
     </body>
+    <script>
+      var workspacePlayground = Blockly.inject('blocklyDiv',
+          {toolbox: document.getElementById('toolbox')});
+    </script>
 </html>
