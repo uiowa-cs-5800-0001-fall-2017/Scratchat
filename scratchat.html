@@ -31,7 +31,6 @@
                 document.getElementById("mySidenav").style.width = "250px";
                 document.getElementById("main").style.marginLeft = "250px";
             }
-
             function closeNav() {
                 document.getElementById("mySidenav").style.width = "0";
                 document.getElementById("main").style.marginLeft= "0";
@@ -39,11 +38,9 @@
             function allowDrop(ev) {
                 ev.preventDefault();
             }
-
             function drag(ev) {
                 ev.dataTransfer.setData("text", ev.target.id);
             }
-
             function drop(ev) {
                 ev.preventDefault();
                 var data = ev.dataTransfer.getData("text");
@@ -78,6 +75,8 @@
 
                 </div>
             </div>
+        </div>
+        <div class="userInput" style="display: inline-block; text-align: center; width: 100%;">
         </div>
         <script src="scratchat.js"></script>
     </body>
