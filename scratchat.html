@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Fundamentals of SE (Scratchat)</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <!-- jQuery cdn -->
@@ -8,7 +9,10 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="blockly/blockly_compressed.js"></script>
+        <script src="blockly/javascript_compressed.js"></script>
         <script src="blockly/blocks_compressed.js"></script>
+
+
 
         <script src="blockly/msg/js/en.js"></script>
         <xml id="toolbox" style="display: none">
@@ -65,7 +69,13 @@
 
 
         <div class="container">
-            <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="blocklyDiv" style="height: 480px; width: 570px;"></div>
+                </div>
+                <div class="col-md-6" id="textarea">
+                </div>
+            </div>
 
             <div class="jumbotron" ondrop="drop(event)" ondragover="allowDrop(event)" style= "padding-bottom: 40%; ">
                 <div id="scratchQuestions" style="float: left;">
@@ -98,9 +108,7 @@
                 </p>
             </div>
         </div>
+        <script src="scratchat.js"></script>
     </body>
-    <script>
-      var workspacePlayground = Blockly.inject('blocklyDiv',
-          {toolbox: document.getElementById('toolbox')});
-    </script>
+
 </html>
