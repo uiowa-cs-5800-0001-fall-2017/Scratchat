@@ -7,6 +7,7 @@
         <!-- jQuery cdn -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/scratchat.css">
 
         <script src="blockly/blockly_compressed.js"></script>
         <script src="blockly/javascript_compressed.js"></script>
@@ -68,13 +69,18 @@
             <div id="blocklyDiv" style="height: 550px; width: 100%;"></div>
             <div id="textarea" style="height: 480px; width: 100%;background-color: #cccccc; margin-top:50px;margin-bottom:50px;">while(1) { }</div>
             <div class="jumbotron" ondrop="drop(event)" ondragover="allowDrop(event)" style= "padding-bottom: 40%; ">
-                <div id="scratchQuestions" style="float: left;">
-
-                </div>
-                <div id="scratchAnswers" style="float: right;">
-
+                <div class="col-sm-3 col-sm-offset-4 frame">
+                    <ul></ul>
+                    <div>
+                        <div class="msj-rta macro" style="margin:auto">
+                            <div class="text text-r">
+                                <input class="mytext" placeholder="Type a message"/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
         <div class="userInput" style="display: inline-block; text-align: center; width: 100%;">
         </div>
