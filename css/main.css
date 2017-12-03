@@ -73,7 +73,7 @@ img {
   .sidenav a {font-size: 18px;}
 }
 
-body{
+body {
 
-    background: img("water.jpg");
+    background-image: url("../water.jpg");
 }
