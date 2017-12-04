@@ -52,14 +52,15 @@ function insertChat(who, text, time = 0){
     setTimeout(
         function(){
             $("ul").append(control);
-
         }, time);
 
 }
 
 function testScript() {
+    resetChat();
+    window.alert("test ready");
     $("#test").html('<script>\
-    var controlLogic = function(text) { '
+    var controlLogic = function(text) {'
         + document.getElementById('textarea').innerHTML +
     '}</script>');
 }

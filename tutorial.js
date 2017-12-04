@@ -86,6 +86,8 @@ var controlLogic = function(text) {
         statusFlag = 3;
     } else if(statusFlag === 3 && text.toLowerCase() === "confirm") {
         insertChat("you", "cool, actually, we are not a pizza shop, so your pizza won't be ready until we have one open in the near future.");
+    } else {
+        insertChat("you", "undefined input, please type \'order pizza\' to order pizza");
     }
 }
 
