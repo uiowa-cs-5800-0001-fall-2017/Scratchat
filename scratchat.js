@@ -114,7 +114,8 @@ resetChat();
 
 //insertChat("you", document.getElementById('textarea').innerHTML, 3000);
 // //-- Print Messages
-insertChat("you", "Hello, welcome to a shop", 2000);
+insertChat("you", "Hello, welcome to Scratchat", 2000);
+insertChat("you", "How can i help you today?", 2700);
 // insertChat("me", "Hello Tom...", 0);
 // insertChat("you", "Hi, Pablo", 1500);
 // insertChat("me", "What would you like to talk about today?", 3500);
