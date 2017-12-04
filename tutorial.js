@@ -1,11 +1,5 @@
 var statusFlag = 0;
 
-var workspace = Blockly.inject('blocklyDiv',{toolbox: document.getElementById('toolbox')});
-
-workspace.addChangeListener(function(event) {
-  document.getElementById('textarea').innerHTML = Blockly.JavaScript.workspaceToCode(workspace);
-});
-
 var me = {};
 me.avatar = "res/avatar.png";
 
@@ -57,13 +51,6 @@ function insertChat(who, text, time = 0){
 
 }
 
-function testScript() {
-    $("#test").html('<script>\
-    var controlLogic = function(text) { '
-        + document.getElementById('textarea').innerHTML +
-    '}</script>');
-}
-
 function resetChat(){
     $("ul").empty();
 }
@@ -79,11 +66,42 @@ $(".mytext").on("keyup", function(e){
     }
 });
 
+var controlLogic = function(text) {
+    if(text.toLowerCase() === "help") {
+        insertChat("you", "Sorry, you are on your own...", 0);
+    } else if("order pizza" === text.toLowerCase() && statusFlag === 0) {
+        statusFlag = 1;
+        insertChat("you", "Okay, what topping do you want? Selection: Hawaiian, Hawaiian, and Hawaiian.");
+    } else if("order pizza" === text.toLowerCase() && statusFlag !== 0) {
+        statusFlag = 0;
+        insertChat("you", "Okay, restarting your order. Type \"order pizza\" to order a pizza");
+    } else if("hawaiian" === text.toLowerCase() && statusFlag === 1) {
+        statusFlag = 2;
+        insertChat("you", "Good choice! Type your address, and it will be sent to you right away!");
+    } else if("hawaiian" === text.toLowerCase() && statusFlag !== 1) {
+        statusFlag = 0;
+        insertChat("you", "Sorry, wrong command. Type \"order pizza\" to order a pizza");
+    } else if(statusFlag === 2){
+        insertChat("you", "This is a testing bot, it doesn't have address checking function, so I will assume you put the right address!");
+        statusFlag = 3;
+    } else if(statusFlag === 3 && text.toLowerCase() === "confirm") {
+        insertChat("you", "cool, actually, we are not a pizza shop, so your pizza won't be ready until we have one open in the near future.");
+    }
+}
 
 //-- Clear Chat
 resetChat();
 
+//insertChat("you", document.getElementById('textarea').innerHTML, 3000);
 // //-- Print Messages
-insertChat("you", "Hello, welcome to Scratchat", 2000);
-insertChat("you", "How can i help you today?", 2700);
+insertChat("you", "Hello, welcome to Scratchat tutorial example.", 2000);
+insertChat("you", "This is a demo for you to order some pizza.", 4000);
+insertChat("you", "Please start by typing \"order pizza\"", 6000);
+// insertChat("me", "Hello Tom...", 0);
+// insertChat("you", "Hi, Pablo", 1500);
+// insertChat("me", "What would you like to talk about today?", 3500);
+// insertChat("you", "Tell me a joke",7000);
+// insertChat("me", "Spaceman: Computer! Computer! Do we bring battery?!", 9500);
+// insertChat("you", "LOL", 12000);
+
 //-- NOTE: No use time on insertChat.

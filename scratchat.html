@@ -13,18 +13,16 @@
         <script src="blockly/javascript_compressed.js"></script>
         <script src="blockly/blocks_compressed.js"></script>
         <script src="blockly/prompt.js"></script>
+        <script src="blockly/chatbot_blocks.js"></script>
 
 
         <script src="blockly/msg/js/en.js"></script>
         <xml id="toolbox" style="display: none">
             <block type="controls_if"></block>
-            <block type="controls_repeat_ext"></block>
             <block type="logic_compare"></block>
-            <block type="math_number"></block>
-            <block type="math_arithmetic"></block>
             <block type="text"></block>
-            <block type="text_print"></block>
-            <block type="text_prompt_ext"></block>
+            <block type="user_input"></block>
+            <block type="answer"></block>
         </xml>
 
         <script>
@@ -67,7 +65,11 @@
 
         <div class="container">
             <div id="blocklyDiv" style="height: 550px; width: 100%;"></div>
-            <div id="textarea" style="height: 480px; width: 100%;background-color: #cccccc; margin-top:50px;margin-bottom:50px;">while(1) { }</div>
+            <div id="textarea" style="height: 480px; width: 100%;background-color: #cccccc; margin-top:50px;margin-bottom:50px;">
+                <div class="text-center">Your auto-generated JavaScript code will be shown here.</div>
+            </div>
+            <button onclick="testScript()">TEST</button>
+            <div id="test"></div>
             <div class="jumbotron" ondrop="drop(event)" ondragover="allowDrop(event)" style= "padding-bottom: 40%; ">
                 <div class="col-sm-3 col-sm-offset-4 frame">
                     <ul></ul>
@@ -82,8 +84,7 @@
             </div>
 
         </div>
-        <div class="userInput" style="display: inline-block; text-align: center; width: 100%;">
-        </div>
+        <div class="userInput" style="display: inline-block; text-align: center; width: 100%;"></div>
         <script src="scratchat.js"></script>
     </body>
 
