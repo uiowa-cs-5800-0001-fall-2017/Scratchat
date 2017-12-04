@@ -75,5 +75,5 @@ img {
 
 body{
 
-    background: img("water.jpg");
+    background-image: url("../water.jpg");
 }
